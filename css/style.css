@@ -1,0 +1,253 @@
+/*------------WHOLE FRAME------------*/
+
+* { 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+html { font-size: 100%; }
+body {   
+    background-color: #fffb0025;
+    background-image: url("../images/sunflower-field-background.webp");
+        /*https://cdn.pixabay.com/photo/2018/12/24/07/09/sunflower-field-background-3892384_1280.jpg*/
+    background-size: cover;
+    background-position: bottom 5% center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #000000;  
+    padding: 0;
+    margin: 0 3% 0 5%;
+}
+header, main, section, aside, footer {
+    padding: 1%;
+    margin: 0;
+}
+main {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+section {
+    width: 63%;
+    background-color: #ffffff9f;
+    margin: 2% 2% 0 0;
+    padding: 1% 2% 2% 2%;
+}
+aside {
+    width: 33%;
+    background-color: #ffffff9f;
+    text-align: justify;
+    margin: 2% 2% 0 0;
+    padding: 1% 2% 2% 2%;
+}
+footer {
+    background-color: #acecff63;
+    width: 100%;
+    font: bold 1.0rem "Cambria";
+    line-height: 1.5rem;
+    text-align: center;  
+    margin: 1% 0 0 0;
+    padding: 1% 0;
+}
+
+/*------------NAVIGATION BAR------------*/
+
+nav ul {
+    overflow: auto;
+    list-style-type: none; 
+    font: bold 1.0rem "Constantia";
+    line-height: 1.5rem;
+    text-align: center;
+    padding: 0;
+}
+nav li {
+    float: left;
+    }
+nav li a {
+    background-color: #fffb0078;
+    color: #000000; 
+    display: block;
+    padding: 1.0rem 3.0rem;
+}
+nav li a:hover  {
+    background-color: #ff9d0081;
+    color: #000000;
+}
+nav li a:active {
+    background-color: #ff110081;
+    color: #000000;
+}
+
+/*------------FEEDBACK BOX------------*/
+
+legend {
+    font: bold 2.0rem "Gabriola";
+}
+fieldset {
+    padding: 0 2.5rem 1.0rem 2.5rem;
+}
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+}
+input[type="submit"], input[type="reset"] {
+    padding: 0.7rem;
+    background-color: #7a7a7a28;
+    margin: 1.0rem 1.0rem 0 0;
+    border-style: badashed;
+}
+.form {
+    margin: 0 auto;
+    width: 100%;
+}
+.form dl dt {
+    font: bold 1.1rem "Cambria";  
+    margin: 0 auto;
+    line-height: 2.7rem;
+}
+.form dd {
+    margin: 0 auto;
+    line-height: 1.2rem;
+}
+.feedback-given {
+    font: italic 1.0rem "Cambria";
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+/*------------NORMAL FORMAT------------*/
+
+h1 {
+    font: bold 4.5rem "Gabriola", cursive;  
+    line-height: 3.5rem;
+    margin-bottom: 0;
+}
+h2 {
+    font: 2.0rem "Comic Sans", cursive; 
+    line-height: 2.0rem;
+    margin-bottom: 2.0rem;
+}
+h5 {
+    font: 1.25rem "Segoe Print"; 
+    line-height: 1.5rem;
+    margin-bottom: 1%;
+}
+p {
+    font: 1.0rem "Cambria";  
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+/*------------NORMAL LINK------------*/
+
+a:link, a:visited {
+    text-decoration: underline;
+    color: #000000;
+}
+a:hover {
+    color: #00aeff;
+}
+a:active {
+    color: #0004ff;
+}
+
+/*------------CONTACT------------*/
+
+address {
+    font-family: "Cambria";
+    line-height: 2.0rem;
+    margin-left: 3%;
+}
+
+/*------------TABLE------------*/
+
+table { border-collapse: collapse; }
+table td,th {
+    padding: 1.0rem;
+    border-style: solid;
+    border-color: #feffcf5b;
+    text-align: center;
+}
+table td {
+    font: 1.5rem "Gabriola";  
+    line-height: 1.5rem;
+}
+table th {
+    font: bold 1.05rem "Cambria";  
+    line-height: 1.5rem;
+}
+
+/*------------ASIDE/QUOTATIONS------------*/
+
+.quotations p {
+    font: bold 1.0rem "Cambria";  
+    line-height: 1.5rem;
+    text-align: justify;
+}
+.quotations h2 {
+    text-align: center;
+}
+.aside h2 {
+    text-align: center;
+}
+.aside p {
+    font: 1.0rem "Cambria";  
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+/*------------IMAGE------------*/
+
+.favorite_img {
+    display: block;
+    margin: 0;
+    width: 100%;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-bottom: 1%;
+}
+
+/*------------ANIMATION------------*/
+
+@keyframes FADEY {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+.animation { 
+    -webkit-animation: FADEY; 
+            animation: FADEY;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s; 
+    -webkit-animation-timing-function: ease-in-out; 
+            animation-timing-function: ease-in-out; 
+    -webkit-animation-iteration-count: 1; 
+            animation-iteration-count: 1;
+}
+
+/*------------RESPONSIVE SETTINGS------------*/
+
+@media only screen and (max-width: 600px) { 
+    header, section, aside, footer, nav li {
+        width: 100%;
+    }
+    section, aside {
+        padding: 1rem;
+    }
+    .form {
+        max-width: 600px;
+        width: 100%;
+    }
+    .form dl {
+        padding: 0 5%;
+    }
+    table th, td{
+        max-width: 600px;
+        width: 100%;
+        float: left;
+    }
+}
